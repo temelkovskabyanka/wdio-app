@@ -10,10 +10,10 @@ describe("Simple Form Demo", () => {
    });
 
    it("Simple Form Demo - Two Input Fields", () => {
-        let expected = "7";
+        let expected = "9";
         SimpleFormDemo.open();
         SimpleFormDemo.fieldA.setValue(3);
-        SimpleFormDemo.fieldB.setValue(4);
+        SimpleFormDemo.fieldB.setValue(6);
         SimpleFormDemo.getTotalButton.click();
         expect(SimpleFormDemo.displayValueText).to.equal(expected);
    });
